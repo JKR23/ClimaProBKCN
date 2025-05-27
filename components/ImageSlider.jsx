@@ -15,7 +15,7 @@ export default function ImageSlider({ images, className = '' }) {
       >
          {images.map((img, index) => (
             <SwiperSlide key={index}>
-               <div className="w-full h-[350px] relative rounded-lg overflow-hidden shadow-lg">
+               <div className="w-full h-[200px] sm:h-[300px] md:h-[350px] relative rounded-lg overflow-hidden shadow-lg">
                   <img
                      src={img.src}
                      alt={`Slide ${index + 1}`}

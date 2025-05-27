@@ -1,6 +1,6 @@
-import ServiceSection1 from '@/pages/services/ServiceSection1';
-import ServiceSection2 from '@/pages/services/serviceSection2';
-import ServiceSection3 from '@/pages/services/ServiceSection3';
+import ServiceSection1 from '@/pages/services/components/ServiceSection1';
+import ServiceSection2 from '@/pages/services/components/serviceSection2';
+import ServiceSection3 from '@/pages/services/components/ServiceSection3';
 
 export default function ServicePage() {
    return (
