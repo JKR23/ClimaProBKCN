@@ -23,9 +23,14 @@ export default function FormContact() {
    const [successMessage, setSuccessMessage] = useState('');
 
    const sendEmail = (values) => {
-      const serviceID = 'service_bexcgi5';
+      /**const serviceID = 'service_bexcgi5';
       const templateID = 'template_4o5bl0f';
-      const publicKey = 'ocrVTh8KJ36IuszAK';
+     const publicKey = 'ocrVTh8KJ36IuszAK';*/
+     
+     //ils vont les chercher dans vercel
+     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
       const templateParams = {
          name: values.nom,
