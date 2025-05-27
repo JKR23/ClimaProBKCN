@@ -1,23 +1,23 @@
 import ProjectGrid from '@/pages/realisations/components/ProjectGrid';
-import COMM1 from '@/public/img/commercials/comm1.jpg';
-import COMM2 from '@/public/img/commercials/comm2.jpg';
-import COMM3 from '@/public/img/commercials/comm3.jpg';
+import COMM1 from '@/public/img/commercials/com10.jpeg';
+import COMM2 from '@/public/img/commercials/com11.jpeg';
+import COMM3 from '@/public/img/commercials/comm13.jpg';
 
 const projetsCommerciaux = [
    {
       image: COMM1,
-      titre: 'Bâtiment commercial, Gatineau',
-      description: 'Chauffage industriel et ventilation sur mesure',
+      titre: 'Restaurant Eben Ezer',
+      description: 'Projet réalisé a Lemba, Kinshasa',
    },
    {
       image: COMM2,
-      titre: 'Centre commercial, Ottawa',
-      description: 'Systèmes CVC centralisés et maintenance',
+      titre: 'Bureau rénové, Gombe',
+      description: 'Projet réalisé a Gombe, Kinshasa',
    },
    {
       image: COMM3,
-      titre: 'Bureau rénové, Aylmer',
-      description: 'Climatisation et système d’air neuf',
+      titre: 'Maison pour un client',
+      description: 'Projet réalisé vers pigeon, Delvo',
    },
 ];
 

@@ -56,7 +56,7 @@ export default function PremiereSection() {
          <div className="absolute inset-0 flex items-center justify-center z-10">
             <div className="text-white text-center px-6 max-w-3xl">
                <h3 className="text-5xl font-semibold mb-4">Pour vous aider à mieux respirer</h3>
-               <p className="text-lg">
+               <p className="text-lg text-yellow-400">
                   Découvrez nos solutions en climatisation, chauffage et ventilation adaptées à vos besoins.
                </p>
             </div>
