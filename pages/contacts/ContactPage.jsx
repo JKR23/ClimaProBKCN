@@ -1,5 +1,7 @@
+'use client';
+
 import Image from 'next/image';
-import FormContact from '@/pages/contacts/FormContact';
+import FormContact from './FormContact';
 import Logo from '@/public/img/imgContact.webp';
 
 export default function ContactPage() {
@@ -10,28 +12,32 @@ export default function ContactPage() {
             backgroundImage: `url(${Logo.src})`,
          }}
       >
-         {/* Overlay pour obscurcir l’arrière-plan */}
-         <div className="absolute inset-0 bg-white/70 backdrop-blur-sm z-0"></div>
+         {/* Overlay blanc semi-transparent */}
+         <div className="absolute inset-0 bg-white/70 backdrop-blur-sm z-0" />
 
-         {/* Contenu principal au-dessus de l’arrière-plan */}
-         <div className="relative z-10 max-w-7xl mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-               Questions ou Devis ?<br /> Contactez-nous!
+         {/* Contenu */}
+         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-10 text-center sm:text-left">
+               Questions ou Devis ?<br /> Contactez-nous !
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-start">
-               {/* Partie image visible */}
-               <div className="w-full">
+
+            {/* Image + Formulaire min-h-[500px] */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[500px] overflow-hidden rounded-lg shadow-lg">
+               {/* Image */}
+               <div className="h-full w-full">
                   <Image
                      src={Logo}
-                     alt="Logo ClimaPro"
-                     className="rounded-lg pb-2 shadow-lg w-full h-auto object-cover"
+                     alt="Contact ClimaPro"
+                     className="w-full h-full object-cover"
                      priority
                   />
                </div>
 
                {/* Formulaire */}
-               <div>
-                  <FormContact />
+               <div className="bg-white h-full w-full p-3 flex items-center">
+                  <div className="w-full">
+                     <FormContact />
+                  </div>
                </div>
             </div>
          </div>

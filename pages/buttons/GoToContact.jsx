@@ -10,7 +10,8 @@ export default function GoToContact() {
 
    return (
       <button
-         className="text-black mb-6 text-lg border-2 mt-8 px-6 py-3 border-black cursor-pointer hover:bg-blue-900 hover:text-yellow-500 transition duration-300 inline-block w-fit"
+         className="bg-blue-900 text-white mb-6 text-lg border-2 mt-8 px-6 py-3 border-blue-900 cursor-pointer hover:text-yellow-500 hover:bg-blue-900 transition duration-300 inline-block w-fit
+                    sm:bg-white sm:text-black sm:border-black"
          onClick={goToContact}
       >
          CONTACTEZ-NOUS
